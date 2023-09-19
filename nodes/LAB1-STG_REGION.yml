@@ -1,0 +1,64 @@
+steps:
+  STG_REGION-efbe5248-288f-4518-8545-dd2347639a24:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: Region data as defined by TPC-H
+      locationID: ""
+      locationName: LAB1
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: f7c4fd2d-8354-403a-9810-413f76e4795f
+              stepCounter: efbe5248-288f-4518-8545-dd2347639a24
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: R_REGIONKEY
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: b11f287b-788b-4918-bb85-4d0c37f6ab02
+              stepCounter: efbe5248-288f-4518-8545-dd2347639a24
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: R_NAME
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 878dd1e4-6990-4c9d-99fc-9d962838b53a
+              stepCounter: efbe5248-288f-4518-8545-dd2347639a24
+            config: {}
+            dataType: VARCHAR(152)
+            defaultValue: ""
+            description: ""
+            name: R_COMMENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('LAB1', 'STG_REGION') }}
+      name: STG_REGION
+      schema: ""
+      sqlType: Source
+      table: STG_REGION
+      type: sourceInput
+    stepCounter: efbe5248-288f-4518-8545-dd2347639a24
