@@ -8,7 +8,15 @@ jobs:
     name: Job1
     steps: []
     subgraphs: []
-locations: {}
+locations:
+  LAB1:
+    mappingDefinitions:
+      "15":
+        database: PC_COALESCE_DB
+        schema: TEST
+      "16":
+        database: PC_COALESCE_DB
+        schema: PROD
 macros: {}
 packages: {}
 projects: {}
